@@ -1,24 +1,21 @@
-# README
+# poke_quiz
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+実装する主な機能
+ユーザー登録機能
 
-Things you may want to cover:
+ユーザーがアカウントを作成してログインできる。
+未ログインユーザーは点数記録ができないが、クイズは楽しめる。
+ポケモンクイズ機能
 
-* Ruby version
+PokéAPI から取得したデータを元にクイズを出題する。
+問題例:
+「このポケモンの名前は？」（画像表示）
+「〇〇は何タイプ？」
+「〇〇の重さは？」（選択式）
+点数記録機能
 
-* System dependencies
+ユーザーがクイズに正解するたびに点数が加算され、データベースに保存される。
+ユーザーのスコアをランキング表示。
+クイズ履歴表示機能
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ユーザーが過去のクイズ結果を確認できる。
