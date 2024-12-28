@@ -15,7 +15,7 @@
 
   <div class="mb-4">
     <%= f.label :password, "パスワード", class: "form-label" %>
-    <%= f.password_field :password, class: "form-control" %>
+    <%= f.password_field :password, class: "form-control", placeholder: "6文字以上で" %>
   </div>
 
   <div class="mb-4">
@@ -33,7 +33,7 @@
     <%= f.text_area :bio, class: "form-control" %>
   </div>
 
-  <div class="mb-3">
+  <div class="mb-3 text-center">
     <%= f.submit "登録", class: "btn btn-outline-primary" %>
   </div>
 <% end %>
