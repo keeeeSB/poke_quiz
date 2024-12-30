@@ -4,13 +4,7 @@
   </div>
   <div class="card-body">
     <div class="text-center mb-4">
-      <% if @user.profile_image.present? %>
-        <%= image_tag @user.profile_image, class: "img-thumbnail profile-image",
-                                           alt: "#{@user.name}のプロフィール画像" %>
-      <% else %>
-        <%= image_tag "sample.png", class: "img-thumbnail profile-image",
-                                    alt: "デフォルトのプロフィール画像" %>
-      <% end %>
+      <%= profile_image_tag(@user) %>
     </div>
     <p><strong>お名前：</strong> <%= @user.name %></p>
     <p><strong>メールアドレス：</strong> <%= @user.email %></p>
